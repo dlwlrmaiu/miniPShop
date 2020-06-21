@@ -1,0 +1,48 @@
+view {
+  /* 使用主题颜色 */
+  /* color: var(--themeColor); */
+}
+.pyg-index .swiper-index {
+  width: 100%;
+  height: calc(100vw * 170 / 375);
+}
+.pyg-index .swiper-index navigator,
+.pyg-index .swiper-index image {
+  width: 100%;
+}
+.pyg-index .category-index {
+  display: flex;
+}
+.pyg-index .category-index navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.pyg-index .category-index navigator image {
+  width: 100%;
+}
+.pyg-index .floor-index .foor-grounp .floor-title {
+  padding: 10rpx 0;
+}
+.pyg-index .floor-index .foor-grounp .floor-title iamge {
+  width: 100%;
+}
+.pyg-index .floor-index .foor-grounp .floor-list {
+  overflow: hidden;
+}
+.pyg-index .floor-index .foor-grounp .floor-list navigator {
+  float: left;
+  width: 33.33%;
+  height: 55.45422414vw;
+}
+.pyg-index .floor-index .foor-grounp .floor-list navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  border-left: 10rpx solid #fff;
+}
+.pyg-index .floor-index .foor-grounp .floor-list navigator:nth-child(2),
+.pyg-index .floor-index .foor-grounp .floor-list navigator:nth-child(3) {
+  border-bottom: 10rpx solid #fff;
+}
+.pyg-index .floor-index .foor-grounp .floor-list navigator image {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,23 @@
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  <view class="collect-main">
+    <view class="collect-title">
+      <text class="collect-tips active">全部</text>
+      <text class="collect-tips">正在热卖</text>
+      <text class="collect-tips">即将上线</text>
+    </view>
+    <view class="collect-content">
+      <navigator wx:for="{{collect}}"   wx:key="goods_id" wx:for-item="item1"
+        wx:for-index="index1" class="goods-item" target="" url="/pages/goods-detail/index?goods_id={{item1.goods_id}}" open-type="navigate">
+        <!-- 左侧 图片容器 -->
+        <view class="goods-img-wrap">
+          <image class="" src="{{item1.goods_small_logo ?item1.goods_small_logo : 'http://image1.suning.cn/uimg/b2c/newcatentries/0000000000-000000000601395527_1_400x400.jpg'}}" mode="widthFix" /> 
+        </view>
+        <!-- 右侧 商品容器 -->
+        <view class="goods-info-wrap">
+          <view class="goods-name">{{item1.goods_name}}</view>
+          <view class="goods-price">¥{{item1.goods_price}}</view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</Tabs>

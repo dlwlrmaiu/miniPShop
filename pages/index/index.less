@@ -1,0 +1,55 @@
+view {
+  /* 使用主题颜色 */
+  /* color: var(--themeColor); */
+}
+.pyg-index {
+  .swiper-index {
+    width: 100%;
+    height: calc(100vw * 170 / 375);
+    navigator, image {
+      width: 100%;
+    } 
+  }
+  .category-index {
+    display: flex;
+    navigator {
+      flex: 1;
+      padding: 20rpx;
+      image {
+        width: 100%;
+      }
+    }
+  }
+  .floor-index {
+    .foor-grounp {
+      .floor-title {
+        padding: 10rpx 0;
+        iamge {
+          width: 100%;
+        }
+      }
+      .floor-list {
+        // 清除浮动
+        overflow: hidden;
+        navigator {
+          float: left;
+          width: 33.33%;
+          height: 33.33vw * 386 / 232;
+          &:nth-last-child(-n+4) {
+            // 232 * 386
+            height: 33.33vw * 386 / 232 / 2;
+            border-left: 10rpx solid #fff;
+          }
+          &:nth-child(2),
+          &:nth-child(3) {
+            border-bottom: 10rpx solid #fff;
+          }
+          image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}

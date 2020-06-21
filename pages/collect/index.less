@@ -1,0 +1,48 @@
+.collect-main {
+  .collect-title {
+    background-color: #f3f4f6;
+    padding: 30rpx 0;
+    .collect-tips {
+      border: 1rpx solid #ccc;
+      background-color: #fff;
+      padding: 15rpx;
+      margin-left: 25rpx;
+    }
+    .collect-tips.active {
+      color: var(--thmeColor);
+      border-color: currentColor;
+    }
+  }
+
+  .collect-content {
+    .goods-item {
+      display: flex;
+      border-bottom: 2rpx solid #ccc;
+      .goods-img-wrap {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        image {
+          width: 70%;
+        }
+      }
+      .goods-info-wrap {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .goods-name {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .goods-price {
+          color: var(--themeColor);
+          font-size: 32rpx;
+        }
+      }
+    }
+  }
+}

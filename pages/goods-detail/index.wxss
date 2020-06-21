@@ -1,0 +1,96 @@
+page {
+  padding-bottom: 90rpx;
+}
+.detail-swiper swiper {
+  height: 65vw;
+  text-align: center;
+}
+.detail-swiper swiper image {
+  width: 60%;
+}
+.goods-price {
+  padding: 15rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: var(--themeColor);
+}
+.goods-name-row {
+  display: flex;
+  padding-bottom: 5rpx;
+  border-bottom: 15rpx solid #eee;
+}
+.goods-name-row .goods-name {
+  padding: 0 15rpx;
+  font-size: 30rpx;
+  flex: 5;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods-name-row .goods-collect {
+  border-left: 2rpx solid #333;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.goods-name-row .goods-collect .icon-shoucang1 {
+  color: var(--themeColor);
+}
+.goods-info .goods-info-title {
+  padding: 20rpx;
+  font-weight: 700;
+  font-size: 32rpx;
+  color: var(--themeColor);
+}
+.bottom-tool {
+  border-top: 1px solid #ccc;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+  display: flex;
+}
+.bottom-tool .tool-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  position: relative;
+}
+.bottom-tool .tool-item button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.bottom-tool .goods-cart {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #ffa550;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+.bottom-tool .goods-buy {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #eb4450;
+  font-size: 30rpx;
+  font-weight: 600;
+}

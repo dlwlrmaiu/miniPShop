@@ -1,0 +1,91 @@
+.receive-address-row {
+  display: flex;
+  padding: 20rpx;
+}
+.receive-address-row .user-info {
+  flex: 2;
+}
+.receive-address-row .user-phone {
+  flex: 1;
+  text-align: right;
+}
+.cart-content .cart-title {
+  padding: 20rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+}
+.cart-content .cart-main .cart-item {
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+}
+.cart-content .cart-main .cart-item .cart-img-wrap {
+  flex: 2;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.cart-content .cart-main .cart-item .cart-img-wrap image {
+  width: 80%;
+}
+.cart-content .cart-main .cart-item .cart-info-wrap {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.cart-content .cart-main .cart-item .cart-info-wrap .goods-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #666;
+}
+.cart-content .cart-main .cart-item .cart-info-wrap .goods-price-wrap {
+  display: flex;
+}
+.cart-content .cart-main .cart-item .cart-info-wrap .goods-price-wrap .goods-price {
+  flex: 4;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+.cart-content .cart-main .cart-item .cart-info-wrap .goods-price-wrap .goods-num {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-tool {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  background-color: #fff;
+}
+.footer-tool .order-price-wrap {
+  flex: 2;
+  text-align: right;
+  padding-right: 10rpx;
+}
+.footer-tool .order-price-wrap .total-price .total-price-text {
+  color: var(--themeColor);
+  font-size: 32rpx;
+}
+.footer-tool .order-price-wrap view {
+  font-size: 28rpx;
+}
+.footer-tool .order-pay-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 32rpx;
+  background-color: var(--themeColor);
+}
